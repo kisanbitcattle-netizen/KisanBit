@@ -1,0 +1,25 @@
+/* src/App.css */
+/* Minimal reset so the map and tab bar fill the full screen cleanly. */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Prevent Leaflet's default marker shadow div from fighting our custom icon */
+.kisanbit-cattle-marker {
+  background: transparent;
+  border: none;
+}

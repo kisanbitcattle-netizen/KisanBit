@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">KisanBit</string>
+    <string name="title_activity_main">KisanBit</string>
+    <string name="package_name">com.kisanbit.app</string>
+    <string name="custom_url_scheme">com.kisanbit.app</string>
+</resources>
