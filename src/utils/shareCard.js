@@ -13,7 +13,7 @@
 
 import { Share } from '@capacitor/share';
 import { Filesystem, Directory } from '@capacitor/filesystem';
-import logo from '../assets/branding/kisanbit-logo.png';
+import logo from '../../assets/kisanbit-logo.original.png';
 
 const APP_NAME = 'KisanBit';
 // Mirrors FieldDetailModal.jsx's STATUS_LABEL - duplicated here (not
