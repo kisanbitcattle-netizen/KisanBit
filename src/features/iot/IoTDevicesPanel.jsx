@@ -35,8 +35,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { supabase } from '../../config/supabaseClient';
 import { offlineCache } from '../../utils/offlineCache';
-import SectionBoxHeader from '../../components/SectionBoxHeader';
-import CardHeaderStrip from '../../components/CardHeaderStrip';
+import SectionBoxHeader from '../../shared/SectionBoxHeader';
+import CardHeaderStrip from '../../shared/CardHeaderStrip';
 import IoTDeviceDetailModal from './IoTDeviceDetailModal';
 import AddWaterTankModal from './AddWaterTankModal';
 import TankGauge from './TankGauge';

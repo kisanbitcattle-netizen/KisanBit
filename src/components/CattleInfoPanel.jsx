@@ -12,7 +12,7 @@ import { offlineCache } from '../utils/offlineCache';
 import { isSellable } from '../utils/animalTaxonomy';
 import CattleCard from './CattleCard';
 import AddCattleForm from './AddCattleForm';
-import SectionBoxHeader from './SectionBoxHeader';
+import SectionBoxHeader from '../shared/SectionBoxHeader';
 import { useUser } from '../context/UserContext';
 
 // Narrowed from select('*', ...) now that CattleCard.jsx is available to

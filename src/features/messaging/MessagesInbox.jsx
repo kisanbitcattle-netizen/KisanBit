@@ -13,7 +13,7 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../../config/supabaseClient';
 import ChatModal from './ChatModal';
-import ConfirmModal from '../../components/ConfirmModal';
+import ConfirmModal from '../../shared/ConfirmModal';
 
 const LISTING_LABEL = { cattle: 'Cattle', crop: 'Crop', field: 'Field' };
 

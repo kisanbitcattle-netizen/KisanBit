@@ -24,7 +24,7 @@ import CattleInfoPanel from '../components/CattleInfoPanel';
 import FieldInfoPanel from '../features/fields/FieldInfoPanel';
 import IoTDevicesPanel from '../features/iot/IoTDevicesPanel';
 import PondsPanel from '../features/ponds/PondsPanel';
-import WeatherCard from '../components/WeatherCard';
+import WeatherCard from '../shared/WeatherCard';
 import { parseWkbPoint } from '../utils/geo';
 
 export default function HomeScreen({ isFarmerView, user }) {

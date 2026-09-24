@@ -6,8 +6,8 @@ import { ANIMAL_EMOJI, isSellable } from '../utils/animalTaxonomy';
 import SellPriceModal from './SellPriceModal';
 import EditCattleModal from './EditCattleModal';
 import TransferOwnershipModal from './TransferOwnershipModal';
-import ConfirmModal from './ConfirmModal';
-import CardHeaderStrip from './CardHeaderStrip';
+import ConfirmModal from '../shared/ConfirmModal';
+import CardHeaderStrip from '../shared/CardHeaderStrip';
 import { parseWkbPoint } from '../utils/geo';
 
 function timeAgo(isoString) {

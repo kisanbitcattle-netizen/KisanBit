@@ -42,7 +42,7 @@ import { supabase } from '../../config/supabaseClient';
 import { offlineCache } from '../../utils/offlineCache';
 import CropCard from './CropCard';
 import AddCropForm from './AddCropForm';
-import SectionBoxHeader from '../../components/SectionBoxHeader';
+import SectionBoxHeader from '../../shared/SectionBoxHeader';
 import { useUser } from '../../context/UserContext';
 
 export default function FieldInfoPanel({ isOpen, onToggle }) {
