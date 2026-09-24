@@ -36,7 +36,7 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../../config/supabaseClient';
 import { SERVICE_TYPES } from './AddServiceForm';
-import ChatModal from '../../components/ChatModal';
+import ChatModal from '../messaging/ChatModal';
 import { shareServiceCard } from '../../utils/shareCard';
 
 // Official brand marks (path data from the `simple-icons` package) drawn

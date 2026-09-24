@@ -39,7 +39,7 @@ import { ANIMAL_EMOJI } from './CattleMarker';
 import { shareCattleCard } from '../utils/shareCard';
 import { fetchCattleTrail, todayLocalDateString } from '../utils/cattleTrail';
 import { parseWkbPoint } from '../utils/geo';
-import ChatModal from './ChatModal';
+import ChatModal from '../features/messaging/ChatModal';
 
 
 // ADDED: last-ping LoRa signal strength -> a farmer-readable label.

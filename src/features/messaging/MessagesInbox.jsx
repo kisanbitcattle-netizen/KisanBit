@@ -11,9 +11,9 @@
 // <MessagesInbox /> line to get an inbox.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
+import { supabase } from '../../config/supabaseClient';
 import ChatModal from './ChatModal';
-import ConfirmModal from './ConfirmModal';
+import ConfirmModal from '../../components/ConfirmModal';
 
 const LISTING_LABEL = { cattle: 'Cattle', crop: 'Crop', field: 'Field' };
 

@@ -56,7 +56,7 @@
 
 import { useEffect, useState } from 'react';
 import { supabase } from '../../config/supabaseClient';
-import ChatModal from '../../components/ChatModal';
+import ChatModal from '../messaging/ChatModal';
 import { sharePondCard } from '../../utils/shareCard';
 
 const BRAND_ICON_PATHS = {

@@ -48,7 +48,7 @@
 //   onClose     - close handler (required to render a close button)
 
 import { useEffect, useRef, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
+import { supabase } from '../../config/supabaseClient';
 
 function formatTime(value) {
   const d = new Date(value);
