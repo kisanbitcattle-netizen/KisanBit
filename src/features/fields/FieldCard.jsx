@@ -38,8 +38,8 @@
 // and pass onToggleListed={handleToggleFieldListed} to <FieldCard />.
 
 import { memo, useRef, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { compressImageElement, loadImageFromDataUrl } from '../utils/imageCompression';
+import { supabase } from '../../config/supabaseClient';
+import { compressImageElement, loadImageFromDataUrl } from '../../utils/imageCompression';
 
 const CROP_EMOJI = {
   paddy: '🌾',

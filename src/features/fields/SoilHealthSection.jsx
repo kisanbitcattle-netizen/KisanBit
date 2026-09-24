@@ -29,8 +29,8 @@
 // of inventing styles.
 
 import { useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { sanitizeNumber } from '../utils/sanitize';
+import { supabase } from '../../config/supabaseClient';
+import { sanitizeNumber } from '../../utils/sanitize';
 
 export default function SoilHealthSection({ field, onSave }) {
   const [soil, setSoil] = useState({

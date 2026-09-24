@@ -21,10 +21,10 @@
 // rendering at all, instead of rendering-then-hiding.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { shareFieldCard } from '../utils/shareCard';
-import { offlineCache } from '../utils/offlineCache';
-import ChatModal from './ChatModal';
+import { supabase } from '../../config/supabaseClient';
+import { shareFieldCard } from '../../utils/shareCard';
+import { offlineCache } from '../../utils/offlineCache';
+import ChatModal from '../../components/ChatModal';
 
 const STATUS_LABEL = {
   growing: 'Growing',

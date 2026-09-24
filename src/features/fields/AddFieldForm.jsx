@@ -28,9 +28,9 @@ import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 import { MapContainer, Polygon, Marker, useMap, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Geolocation } from '@capacitor/geolocation';
-import { supabase } from '../config/supabaseClient';
-import { useLinkedSocialLinks } from '../utils/socialLinks';
-import OfflineTileLayer from './OfflineTileLayer';
+import { supabase } from '../../config/supabaseClient';
+import { useLinkedSocialLinks } from '../../utils/socialLinks';
+import OfflineTileLayer from '../../components/OfflineTileLayer';
 
 const DEFAULT_CENTER = [17.385, 78.4867];
 const EARTH_RADIUS_M = 6371000;

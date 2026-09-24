@@ -21,7 +21,7 @@ import { supabase } from '../config/supabaseClient';
 import MapPreviewCard from '../components/MapPreviewCard';
 import FullMapModal from '../components/FullMapModal';
 import CattleInfoPanel from '../components/CattleInfoPanel';
-import FieldInfoPanel from '../components/FieldInfoPanel';
+import FieldInfoPanel from '../features/fields/FieldInfoPanel';
 import IoTDevicesPanel from '../components/IoTDevicesPanel';
 import PondsPanel from '../features/ponds/PondsPanel';
 import WeatherCard from '../components/WeatherCard';

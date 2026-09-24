@@ -38,12 +38,12 @@
 //    Profile-tab-only per the existing explicit user requirement.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { offlineCache } from '../utils/offlineCache';
+import { supabase } from '../../config/supabaseClient';
+import { offlineCache } from '../../utils/offlineCache';
 import CropCard from './CropCard';
 import AddCropForm from './AddCropForm';
-import SectionBoxHeader from './SectionBoxHeader';
-import { useUser } from '../context/UserContext';
+import SectionBoxHeader from '../../components/SectionBoxHeader';
+import { useUser } from '../../context/UserContext';
 
 export default function FieldInfoPanel({ isOpen, onToggle }) {
   const [fieldsList, setFieldsList] = useState([]);

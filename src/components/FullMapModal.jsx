@@ -31,9 +31,9 @@ import 'leaflet/dist/leaflet.css';
 import { supabase } from '../config/supabaseClient';
 import CattleMarker, { CattleClusterMarker, ANIMAL_EMOJI } from './CattleMarker';
 import CattleDetailModal from './CattleDetailModal';
-import FieldMarker from './FieldMarker';
+import FieldMarker from '../features/fields/FieldMarker';
 import PondMarker from '../features/ponds/PondMarker';
-import FieldDetailModal from './FieldDetailModal';
+import FieldDetailModal from '../features/fields/FieldDetailModal';
 import OfflineTileLayer from './OfflineTileLayer';
 import { parseWkbPoint } from '../utils/geo';
 // Zone-colored base→animal dots line (replaces the old static public

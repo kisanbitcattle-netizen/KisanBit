@@ -25,7 +25,7 @@
 // with the crop rows AddFieldForm already creates today.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
+import { supabase } from '../../config/supabaseClient';
 
 // --- copied verbatim from AddFieldForm.jsx ---
 async function compressImageToTargetKB(file, targetKB = 10, maxDimension = 480) {

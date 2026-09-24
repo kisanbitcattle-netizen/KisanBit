@@ -22,7 +22,7 @@ import { MapContainer, Circle, CircleMarker, Polyline, Marker, useMap, useMapEve
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import CattleMarker from './CattleMarker';
-import FieldMarker from './FieldMarker';
+import FieldMarker from '../features/fields/FieldMarker';
 import PondMarker from '../features/ponds/PondMarker';
 import { getServiceIcon } from './ServiceMarker';
 import OfflineTileLayer from './OfflineTileLayer';
