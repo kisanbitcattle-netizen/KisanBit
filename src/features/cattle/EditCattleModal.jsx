@@ -20,13 +20,13 @@ import { MapContainer, Circle, Marker, useMap, useMapEvents } from 'react-leafle
 import 'leaflet/dist/leaflet.css';
 import { Geolocation } from '@capacitor/geolocation';
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
-import { supabase } from '../config/supabaseClient';
-import OfflineTileLayer from './OfflineTileLayer';
-import { ANIMAL_TAXONOMY, ANIMAL_TYPES, ANIMAL_GROUPS, breedsFor, producesMilk } from '../utils/animalTaxonomy';
-import { compressImageToTargetKB, uploadCompressedAsset } from '../utils/imageUpload';
-import { sanitizeText, sanitizePhone, sanitizeNumber, sanitizeEnum } from '../utils/sanitize';
-import { parseWkbPoint } from '../utils/geo';
-import { reverseGeocode } from '../utils/reverseGeocode';
+import { supabase } from '../../config/supabaseClient';
+import OfflineTileLayer from '../../components/OfflineTileLayer';
+import { ANIMAL_TAXONOMY, ANIMAL_TYPES, ANIMAL_GROUPS, breedsFor, producesMilk } from '../../utils/animalTaxonomy';
+import { compressImageToTargetKB, uploadCompressedAsset } from '../../utils/imageUpload';
+import { sanitizeText, sanitizePhone, sanitizeNumber, sanitizeEnum } from '../../utils/sanitize';
+import { parseWkbPoint } from '../../utils/geo';
+import { reverseGeocode } from '../../utils/reverseGeocode';
 
 const RECORD_TYPES = ['vaccination', 'checkup', 'treatment', 'other'];
 const GENDERS = ['male', 'female'];

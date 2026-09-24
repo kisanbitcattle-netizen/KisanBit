@@ -21,7 +21,7 @@ import { createPortal } from 'react-dom';
 import { MapContainer, Circle, CircleMarker, Polyline, Marker, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import CattleMarker from './CattleMarker';
+import CattleMarker from '../features/cattle/CattleMarker';
 import FieldMarker from '../features/fields/FieldMarker';
 import PondMarker from '../features/ponds/PondMarker';
 import { getServiceIcon } from '../features/services/ServiceMarker';

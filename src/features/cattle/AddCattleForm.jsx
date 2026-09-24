@@ -5,12 +5,12 @@ import { MapContainer, Circle, Marker, useMap, useMapEvents } from 'react-leafle
 import 'leaflet/dist/leaflet.css';
 import { Geolocation } from '@capacitor/geolocation';
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
-import { supabase } from '../config/supabaseClient';
-import { ANIMAL_TAXONOMY, ANIMAL_TYPES, ANIMAL_GROUPS, breedsFor, producesMilk } from '../utils/animalTaxonomy';
-import { compressImageToTargetKB, uploadCompressedAsset } from '../utils/imageUpload';
-import { sanitizeText, sanitizePhone, sanitizeNumber, sanitizeEnum } from '../utils/sanitize';
-import { reverseGeocode } from '../utils/reverseGeocode';
-import OfflineTileLayer from './OfflineTileLayer';
+import { supabase } from '../../config/supabaseClient';
+import { ANIMAL_TAXONOMY, ANIMAL_TYPES, ANIMAL_GROUPS, breedsFor, producesMilk } from '../../utils/animalTaxonomy';
+import { compressImageToTargetKB, uploadCompressedAsset } from '../../utils/imageUpload';
+import { sanitizeText, sanitizePhone, sanitizeNumber, sanitizeEnum } from '../../utils/sanitize';
+import { reverseGeocode } from '../../utils/reverseGeocode';
+import OfflineTileLayer from '../../components/OfflineTileLayer';
 
 // ANIMAL_TYPES / breed lists used to be hardcoded here (cow/buffalo/goat/
 // sheep/other only, one shared CATTLE_BREEDS list for all of them). Both

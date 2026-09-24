@@ -46,7 +46,7 @@ import AuthScreen from './screens/AuthScreen';
 import { supabase } from './config/supabaseClient';
 import { getCurrentSession, getCurrentProfile, onAuthStateChange } from './services/authService';
 import './App.css';
-import TransferRequestsBanner from './components/TransferRequestsBanner';
+import TransferRequestsBanner from './features/cattle/TransferRequestsBanner';
 import { UserProvider } from './context/UserContext';
 
 // Apply the persisted dark-mode preference as early as possible - at

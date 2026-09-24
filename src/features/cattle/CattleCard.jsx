@@ -1,14 +1,14 @@
 // src/components/CattleCard.jsx
 
 import { useState, useEffect, useMemo } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { ANIMAL_EMOJI, isSellable } from '../utils/animalTaxonomy';
+import { supabase } from '../../config/supabaseClient';
+import { ANIMAL_EMOJI, isSellable } from '../../utils/animalTaxonomy';
 import SellPriceModal from './SellPriceModal';
 import EditCattleModal from './EditCattleModal';
 import TransferOwnershipModal from './TransferOwnershipModal';
-import ConfirmModal from '../shared/ConfirmModal';
-import CardHeaderStrip from '../shared/CardHeaderStrip';
-import { parseWkbPoint } from '../utils/geo';
+import ConfirmModal from '../../shared/ConfirmModal';
+import CardHeaderStrip from '../../shared/CardHeaderStrip';
+import { parseWkbPoint } from '../../utils/geo';
 
 function timeAgo(isoString) {
   if (!isoString) return 'no data yet';

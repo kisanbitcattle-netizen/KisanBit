@@ -14,8 +14,8 @@ import L from 'leaflet';
 import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
 import markerIconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
-import { supabase } from '../config/supabaseClient';
-import OfflineTileLayer from './OfflineTileLayer';
+import { supabase } from '../../config/supabaseClient';
+import OfflineTileLayer from '../../components/OfflineTileLayer';
 
 // Vite (like most bundlers) doesn't resolve Leaflet's default marker
 // icon path automatically, which otherwise silently renders as a

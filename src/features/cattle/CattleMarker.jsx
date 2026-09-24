@@ -5,9 +5,9 @@ import { Marker, Polyline } from 'react-leaflet';
 import L from 'leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { Capacitor } from '@capacitor/core';
-import { ANIMAL_EMOJI } from '../utils/animalTaxonomy';
-import { ZONE_COLORS } from '../utils/geoZones';
-import { getCattleColor } from '../utils/cattleColors';
+import { ANIMAL_EMOJI } from '../../utils/animalTaxonomy';
+import { ZONE_COLORS } from '../../utils/geoZones';
+import { getCattleColor } from '../../utils/cattleColors';
 
 // ANIMAL_EMOJI used to be defined here directly (cow/buffalo/goat/sheep/
 // other only). It's now derived from animalTaxonomy.js, the single source

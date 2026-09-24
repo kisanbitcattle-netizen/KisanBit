@@ -34,12 +34,12 @@
 // path, and needs no date picked at all to work.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
+import { supabase } from '../../config/supabaseClient';
 import { ANIMAL_EMOJI } from './CattleMarker';
-import { shareCattleCard } from '../utils/shareCard';
-import { fetchCattleTrail, todayLocalDateString } from '../utils/cattleTrail';
-import { parseWkbPoint } from '../utils/geo';
-import ChatModal from '../features/messaging/ChatModal';
+import { shareCattleCard } from '../../utils/shareCard';
+import { fetchCattleTrail, todayLocalDateString } from '../../utils/cattleTrail';
+import { parseWkbPoint } from '../../utils/geo';
+import ChatModal from '../messaging/ChatModal';
 
 
 // ADDED: last-ping LoRa signal strength -> a farmer-readable label.

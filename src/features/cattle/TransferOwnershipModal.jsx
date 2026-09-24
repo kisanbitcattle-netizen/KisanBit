@@ -33,8 +33,8 @@
 // toUserMessage for anything it can't resolve.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { toUserMessage } from '../utils/errorHandling';
+import { supabase } from '../../config/supabaseClient';
+import { toUserMessage } from '../../utils/errorHandling';
 
 function normalizeIdentifier(raw) {
   const trimmed = raw.trim();

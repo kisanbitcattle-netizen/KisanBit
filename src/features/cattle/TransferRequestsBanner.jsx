@@ -22,9 +22,9 @@
 // calls load() again (no channel creation inside the callback).
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { toUserMessage } from '../utils/errorHandling';
-import { useUser } from '../context/UserContext';
+import { supabase } from '../../config/supabaseClient';
+import { toUserMessage } from '../../utils/errorHandling';
+import { useUser } from '../../context/UserContext';
 
 export default function TransferRequestsBanner() {
   const [requests, setRequests] = useState([]);

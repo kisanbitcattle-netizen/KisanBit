@@ -12,7 +12,7 @@ import { toUserMessage } from '../utils/errorHandling';
 import { compressImageElement, loadImageFromDataUrl } from '../utils/imageCompression';
 import FieldCard from '../features/fields/FieldCard';
 import AddFieldForm from '../features/fields/AddFieldForm';
-import AddCattleBaseForm from '../components/AddCattleBaseForm';
+import AddCattleBaseForm from '../features/cattle/AddCattleBaseForm';
 import AddPondForm from '../features/ponds/AddPondForm';
 import AddServiceForm from '../features/services/AddServiceForm';
 import MessagesInbox from '../features/messaging/MessagesInbox';

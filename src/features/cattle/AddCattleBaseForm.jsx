@@ -4,11 +4,11 @@ import { useRef, useState, useEffect } from 'react';
 import { MapContainer, Circle, Marker, useMapEvents, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Geolocation } from '@capacitor/geolocation';
-import { supabase } from '../config/supabaseClient';
-import { sanitizeText, sanitizeNumber, sanitizePhone } from '../utils/sanitize';
-import { parseWkbPoint } from '../utils/geo';
-import { reverseGeocode } from '../utils/reverseGeocode';
-import OfflineTileLayer from './OfflineTileLayer';
+import { supabase } from '../../config/supabaseClient';
+import { sanitizeText, sanitizeNumber, sanitizePhone } from '../../utils/sanitize';
+import { parseWkbPoint } from '../../utils/geo';
+import { reverseGeocode } from '../../utils/reverseGeocode';
+import OfflineTileLayer from '../../components/OfflineTileLayer';
 
 const DEFAULT_CENTER = [17.385, 78.4867];
 const DEFAULT_GEOFENCE_RADIUS_M = 500;

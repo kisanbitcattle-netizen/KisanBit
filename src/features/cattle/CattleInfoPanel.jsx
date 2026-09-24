@@ -7,13 +7,13 @@
 // "+ Add" button here to register a new animal (AddCattleForm).
 
 import { useEffect, useRef, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { offlineCache } from '../utils/offlineCache';
-import { isSellable } from '../utils/animalTaxonomy';
+import { supabase } from '../../config/supabaseClient';
+import { offlineCache } from '../../utils/offlineCache';
+import { isSellable } from '../../utils/animalTaxonomy';
 import CattleCard from './CattleCard';
 import AddCattleForm from './AddCattleForm';
-import SectionBoxHeader from '../shared/SectionBoxHeader';
-import { useUser } from '../context/UserContext';
+import SectionBoxHeader from '../../shared/SectionBoxHeader';
+import { useUser } from '../../context/UserContext';
 
 // Narrowed from select('*', ...) now that CattleCard.jsx is available to
 // check against. Also drops average_rating/rating_count (don't exist as

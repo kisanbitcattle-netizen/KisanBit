@@ -20,7 +20,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../config/supabaseClient'; 
 import MapPreviewCard from '../components/MapPreviewCard';
 import FullMapModal from '../components/FullMapModal';
-import CattleInfoPanel from '../components/CattleInfoPanel';
+import CattleInfoPanel from '../features/cattle/CattleInfoPanel';
 import FieldInfoPanel from '../features/fields/FieldInfoPanel';
 import IoTDevicesPanel from '../features/iot/IoTDevicesPanel';
 import PondsPanel from '../features/ponds/PondsPanel';

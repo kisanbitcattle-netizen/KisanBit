@@ -29,8 +29,8 @@ import {
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { supabase } from '../config/supabaseClient';
-import CattleMarker, { CattleClusterMarker, ANIMAL_EMOJI } from './CattleMarker';
-import CattleDetailModal from './CattleDetailModal';
+import CattleMarker, { CattleClusterMarker, ANIMAL_EMOJI } from '../features/cattle/CattleMarker';
+import CattleDetailModal from '../features/cattle/CattleDetailModal';
 import FieldMarker from '../features/fields/FieldMarker';
 import PondMarker from '../features/ponds/PondMarker';
 import FieldDetailModal from '../features/fields/FieldDetailModal';
