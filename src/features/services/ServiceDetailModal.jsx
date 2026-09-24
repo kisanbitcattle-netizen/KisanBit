@@ -34,10 +34,10 @@
 //    explicitly requested — flag if not wanted.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
+import { supabase } from '../../config/supabaseClient';
 import { SERVICE_TYPES } from './AddServiceForm';
-import ChatModal from './ChatModal';
-import { shareServiceCard } from '../utils/shareCard';
+import ChatModal from '../../components/ChatModal';
+import { shareServiceCard } from '../../utils/shareCard';
 
 // Official brand marks (path data from the `simple-icons` package) drawn
 // small and crisp instead of emoji (▶️📸👍), which render inconsistently

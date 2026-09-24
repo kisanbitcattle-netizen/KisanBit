@@ -14,7 +14,7 @@
 import L from 'leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { SERVICE_TYPES } from './AddServiceForm';
-import { getServiceColor } from '../utils/pinColors';
+import { getServiceColor } from '../../utils/pinColors';
 
 export const SERVICE_TYPE_EMOJI = Object.fromEntries(
   SERVICE_TYPES.map((t) => [t.key, t.emoji])

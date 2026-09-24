@@ -46,8 +46,8 @@ import { getCattleColor } from '../utils/cattleColors';
 // so both draw the exact same trail the exact same way - see
 // utils/cattleTrail.js for the tier-boundary-split segment logic.
 import { fetchCattleTrail, buildTrailSegments, todayLocalDateString } from '../utils/cattleTrail';
-import { getServiceIcon } from './ServiceMarker';
-import ServiceDetailModal from './ServiceDetailModal';
+import { getServiceIcon } from '../features/services/ServiceMarker';
+import ServiceDetailModal from '../features/services/ServiceDetailModal';
 import PondDetailModal from '../features/ponds/PondDetailModal';
 import FilterSheet, { DEFAULT_FILTERS } from './MapFilters';
 

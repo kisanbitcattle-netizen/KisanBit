@@ -24,7 +24,7 @@ import 'leaflet/dist/leaflet.css';
 import CattleMarker from './CattleMarker';
 import FieldMarker from '../features/fields/FieldMarker';
 import PondMarker from '../features/ponds/PondMarker';
-import { getServiceIcon } from './ServiceMarker';
+import { getServiceIcon } from '../features/services/ServiceMarker';
 import OfflineTileLayer from './OfflineTileLayer';
 import { getTodaysQuote } from '../utils/dailyQuotes';
 import { parseWkbPoint } from '../utils/geo';

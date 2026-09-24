@@ -626,4 +626,4 @@ export default function IoTDevicesPanel({ isOpen, onToggle }) {
       )}
     </div>
   );
-}s
+}

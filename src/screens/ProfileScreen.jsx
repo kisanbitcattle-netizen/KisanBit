@@ -14,7 +14,7 @@ import FieldCard from '../features/fields/FieldCard';
 import AddFieldForm from '../features/fields/AddFieldForm';
 import AddCattleBaseForm from '../components/AddCattleBaseForm';
 import AddPondForm from '../features/ponds/AddPondForm';
-import AddServiceForm from '../components/AddServiceForm';
+import AddServiceForm from '../features/services/AddServiceForm';
 import MessagesInbox from '../components/MessagesInbox';
 
 function SectionCard({ title, icon, children }) {
