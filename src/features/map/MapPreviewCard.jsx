@@ -21,25 +21,25 @@ import { createPortal } from 'react-dom';
 import { MapContainer, Circle, CircleMarker, Polyline, Marker, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import CattleMarker from '../features/cattle/CattleMarker';
-import FieldMarker from '../features/fields/FieldMarker';
-import PondMarker from '../features/ponds/PondMarker';
-import { getServiceIcon } from '../features/services/ServiceMarker';
+import CattleMarker from '../cattle/CattleMarker';
+import FieldMarker from '../fields/FieldMarker';
+import PondMarker from '../ponds/PondMarker';
+import { getServiceIcon } from '../services/ServiceMarker';
 import OfflineTileLayer from './OfflineTileLayer';
-import { getTodaysQuote } from '../utils/dailyQuotes';
-import { parseWkbPoint } from '../utils/geo';
-import { generateAndShareHomeCard } from '../services/heroShareService';
+import { getTodaysQuote } from '../../utils/dailyQuotes';
+import { parseWkbPoint } from '../../utils/geo';
+import { generateAndShareHomeCard } from '../../services/heroShareService';
 // Needed here (not just HomeScreen) because the GPS history trail below
 // is fetched separately from cattle_location_history, which isn't part
 // of HomeScreen's existing cattleData select.
-import { supabase } from '../config/supabaseClient';
-import { fetchCattleTrail, buildTrailSegments, todayLocalDateString } from '../utils/cattleTrail';
-import { getCattleColor } from '../utils/cattleColors';
+import { supabase } from '../../config/supabaseClient';
+import { fetchCattleTrail, buildTrailSegments, todayLocalDateString } from '../../utils/cattleTrail';
+import { getCattleColor } from '../../utils/cattleColors';
 // Progressive tier circles + zone-colored dots line (farmer view only -
 // see the render block below). Same tier colors/distance math as
 // GeofenceSetupModal's Tier 1/2/3 sliders and FullMapModal's dots line,
 // centralized here so all three stay in sync.
-import { ZONE_COLORS, haversineMeters, getCurrentZone } from '../utils/geoZones';
+import { ZONE_COLORS, haversineMeters, getCurrentZone } from '../../utils/geoZones';
 
 const DEFAULT_CENTER = [17.385, 78.4867];
 const quote = getTodaysQuote();

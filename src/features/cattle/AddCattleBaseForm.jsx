@@ -8,7 +8,7 @@ import { supabase } from '../../config/supabaseClient';
 import { sanitizeText, sanitizeNumber, sanitizePhone } from '../../utils/sanitize';
 import { parseWkbPoint } from '../../utils/geo';
 import { reverseGeocode } from '../../utils/reverseGeocode';
-import OfflineTileLayer from '../../components/OfflineTileLayer';
+import OfflineTileLayer from '../map/OfflineTileLayer';
 
 const DEFAULT_CENTER = [17.385, 78.4867];
 const DEFAULT_GEOFENCE_RADIUS_M = 500;

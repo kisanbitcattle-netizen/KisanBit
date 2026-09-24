@@ -15,7 +15,7 @@
 // category shows only the sub-filters that make sense for it.
 
 import React, { useEffect, useState } from 'react';
-import { SERVICE_TYPES } from '../features/services/AddServiceForm';
+import { SERVICE_TYPES } from '../services/AddServiceForm';
 
 const NAVY = 'var(--color-navy)';
 const GOLD = 'var(--color-gold)';

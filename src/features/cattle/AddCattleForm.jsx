@@ -10,7 +10,7 @@ import { ANIMAL_TAXONOMY, ANIMAL_TYPES, ANIMAL_GROUPS, breedsFor, producesMilk }
 import { compressImageToTargetKB, uploadCompressedAsset } from '../../utils/imageUpload';
 import { sanitizeText, sanitizePhone, sanitizeNumber, sanitizeEnum } from '../../utils/sanitize';
 import { reverseGeocode } from '../../utils/reverseGeocode';
-import OfflineTileLayer from '../../components/OfflineTileLayer';
+import OfflineTileLayer from '../map/OfflineTileLayer';
 
 // ANIMAL_TYPES / breed lists used to be hardcoded here (cow/buffalo/goat/
 // sheep/other only, one shared CATTLE_BREEDS list for all of them). Both

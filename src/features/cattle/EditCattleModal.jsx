@@ -21,7 +21,7 @@ import 'leaflet/dist/leaflet.css';
 import { Geolocation } from '@capacitor/geolocation';
 import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 import { supabase } from '../../config/supabaseClient';
-import OfflineTileLayer from '../../components/OfflineTileLayer';
+import OfflineTileLayer from '../map/OfflineTileLayer';
 import { ANIMAL_TAXONOMY, ANIMAL_TYPES, ANIMAL_GROUPS, breedsFor, producesMilk } from '../../utils/animalTaxonomy';
 import { compressImageToTargetKB, uploadCompressedAsset } from '../../utils/imageUpload';
 import { sanitizeText, sanitizePhone, sanitizeNumber, sanitizeEnum } from '../../utils/sanitize';

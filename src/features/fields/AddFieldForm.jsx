@@ -30,7 +30,7 @@ import 'leaflet/dist/leaflet.css';
 import { Geolocation } from '@capacitor/geolocation';
 import { supabase } from '../../config/supabaseClient';
 import { useLinkedSocialLinks } from '../../utils/socialLinks';
-import OfflineTileLayer from '../../components/OfflineTileLayer';
+import OfflineTileLayer from '../map/OfflineTileLayer';
 
 const DEFAULT_CENTER = [17.385, 78.4867];
 const EARTH_RADIUS_M = 6371000;

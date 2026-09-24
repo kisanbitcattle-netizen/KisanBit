@@ -14,7 +14,7 @@
 // to store cattle/field/geofence data itself.
 
 import React, { useEffect, useState, useRef, useCallback, useMemo } from 'react';
-import { offlineCache } from '../utils/offlineCache';
+import { offlineCache } from '../../utils/offlineCache';
 import {
   MapContainer,
   Marker,
@@ -28,27 +28,27 @@ import {
 } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { supabase } from '../config/supabaseClient';
-import CattleMarker, { CattleClusterMarker, ANIMAL_EMOJI } from '../features/cattle/CattleMarker';
-import CattleDetailModal from '../features/cattle/CattleDetailModal';
-import FieldMarker from '../features/fields/FieldMarker';
-import PondMarker from '../features/ponds/PondMarker';
-import FieldDetailModal from '../features/fields/FieldDetailModal';
+import { supabase } from '../../config/supabaseClient';
+import CattleMarker, { CattleClusterMarker, ANIMAL_EMOJI } from '../cattle/CattleMarker';
+import CattleDetailModal from '../cattle/CattleDetailModal';
+import FieldMarker from '../fields/FieldMarker';
+import PondMarker from '../ponds/PondMarker';
+import FieldDetailModal from '../fields/FieldDetailModal';
 import OfflineTileLayer from './OfflineTileLayer';
-import { parseWkbPoint } from '../utils/geo';
+import { parseWkbPoint } from '../../utils/geo';
 // Zone-colored base→animal dots line (replaces the old static public
 // geofence Circle in this file - see the render block near the bottom).
 // Same tier colors/distance math MapPreviewCard.jsx and
 // GeofenceSetupModal use, centralized so all three stay in sync.
-import { ZONE_COLORS, haversineMeters, getCurrentZone } from '../utils/geoZones';
-import { getCattleColor } from '../utils/cattleColors';
+import { ZONE_COLORS, haversineMeters, getCurrentZone } from '../../utils/geoZones';
+import { getCattleColor } from '../../utils/cattleColors';
 // Historical GPS trail (segments + dots), shared with MapPreviewCard.jsx
 // so both draw the exact same trail the exact same way - see
 // utils/cattleTrail.js for the tier-boundary-split segment logic.
-import { fetchCattleTrail, buildTrailSegments, todayLocalDateString } from '../utils/cattleTrail';
-import { getServiceIcon } from '../features/services/ServiceMarker';
-import ServiceDetailModal from '../features/services/ServiceDetailModal';
-import PondDetailModal from '../features/ponds/PondDetailModal';
+import { fetchCattleTrail, buildTrailSegments, todayLocalDateString } from '../../utils/cattleTrail';
+import { getServiceIcon } from '../services/ServiceMarker';
+import ServiceDetailModal from '../services/ServiceDetailModal';
+import PondDetailModal from '../ponds/PondDetailModal';
 import FilterSheet, { DEFAULT_FILTERS } from './MapFilters';
 
 /**

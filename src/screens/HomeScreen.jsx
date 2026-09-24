@@ -18,8 +18,8 @@
 
 import { useState, useEffect } from 'react';
 import { supabase } from '../config/supabaseClient'; 
-import MapPreviewCard from '../components/MapPreviewCard';
-import FullMapModal from '../components/FullMapModal';
+import MapPreviewCard from '../features/map/MapPreviewCard';
+import FullMapModal from '../features/map/FullMapModal';
 import CattleInfoPanel from '../features/cattle/CattleInfoPanel';
 import FieldInfoPanel from '../features/fields/FieldInfoPanel';
 import IoTDevicesPanel from '../features/iot/IoTDevicesPanel';
