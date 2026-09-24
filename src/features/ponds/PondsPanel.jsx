@@ -35,12 +35,12 @@
 //    now.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { offlineCache } from '../utils/offlineCache';
+import { supabase } from '../../config/supabaseClient';
+import { offlineCache } from '../../utils/offlineCache';
 import AddFishStockForm from './AddFishStockForm';
-import SectionBoxHeader from './SectionBoxHeader';
-import CardHeaderStrip from './CardHeaderStrip';
-import { useUser } from '../context/UserContext';
+import SectionBoxHeader from '../../components/SectionBoxHeader';
+import CardHeaderStrip from '../../components/CardHeaderStrip';
+import { useUser } from '../../context/UserContext';
 
 // Green fish-card header, matching CropCard's green (per explicit
 // request) - note this now differs from HomeScreen.jsx's blue

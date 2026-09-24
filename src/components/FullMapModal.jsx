@@ -1,4 +1,4 @@
-﻿// src/components/FullMapModal.jsx
+// src/components/FullMapModal.jsx
 //
 // Opens when the hero MapPreviewCard is tapped. Shows the full,
 // interactive map PLUS today's movement trail (polyline built from
@@ -32,7 +32,7 @@ import { supabase } from '../config/supabaseClient';
 import CattleMarker, { CattleClusterMarker, ANIMAL_EMOJI } from './CattleMarker';
 import CattleDetailModal from './CattleDetailModal';
 import FieldMarker from './FieldMarker';
-import PondMarker from './PondMarker';
+import PondMarker from '../features/ponds/PondMarker';
 import FieldDetailModal from './FieldDetailModal';
 import OfflineTileLayer from './OfflineTileLayer';
 import { parseWkbPoint } from '../utils/geo';
@@ -48,7 +48,7 @@ import { getCattleColor } from '../utils/cattleColors';
 import { fetchCattleTrail, buildTrailSegments, todayLocalDateString } from '../utils/cattleTrail';
 import { getServiceIcon } from './ServiceMarker';
 import ServiceDetailModal from './ServiceDetailModal';
-import PondDetailModal from './PondDetailModal';
+import PondDetailModal from '../features/ponds/PondDetailModal';
 import FilterSheet, { DEFAULT_FILTERS } from './MapFilters';
 
 /**

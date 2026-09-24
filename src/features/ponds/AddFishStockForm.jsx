@@ -64,10 +64,10 @@
 //    required.
 
 import { useEffect, useRef, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { compressImageToTargetKB, uploadCompressedAsset } from '../utils/imageUpload';
-import { sanitizeText, sanitizeNumber, sanitizeEnum } from '../utils/sanitize';
-import { AQUA_SPECIES_TAXONOMY, AQUA_SPECIES_GROUPS, speciesKeyForLabel } from '../utils/aquaSpeciesTaxonomy';
+import { supabase } from '../../config/supabaseClient';
+import { compressImageToTargetKB, uploadCompressedAsset } from '../../utils/imageUpload';
+import { sanitizeText, sanitizeNumber, sanitizeEnum } from '../../utils/sanitize';
+import { AQUA_SPECIES_TAXONOMY, AQUA_SPECIES_GROUPS, speciesKeyForLabel } from '../../utils/aquaSpeciesTaxonomy';
 
 const WATER_TYPES = ['Freshwater', 'Brackish', 'Saline'];
 const SUNLIGHT_OPTIONS = ['Full sun', 'Partial shade', 'Full shade'];

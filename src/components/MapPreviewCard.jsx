@@ -1,4 +1,4 @@
-﻿// src/components/MapPreviewCard.jsx
+// src/components/MapPreviewCard.jsx
 //
 // The unified home hero card: map snapshot + cattle count + today's
 // advisory quote, all in ONE card, with a Select button right on it.
@@ -23,7 +23,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import CattleMarker from './CattleMarker';
 import FieldMarker from './FieldMarker';
-import PondMarker from './PondMarker';
+import PondMarker from '../features/ponds/PondMarker';
 import { getServiceIcon } from './ServiceMarker';
 import OfflineTileLayer from './OfflineTileLayer';
 import { getTodaysQuote } from '../utils/dailyQuotes';

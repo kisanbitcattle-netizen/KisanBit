@@ -13,7 +13,7 @@ import { compressImageElement, loadImageFromDataUrl } from '../utils/imageCompre
 import FieldCard from '../components/FieldCard';
 import AddFieldForm from '../components/AddFieldForm';
 import AddCattleBaseForm from '../components/AddCattleBaseForm';
-import AddPondForm from '../components/AddPondForm';
+import AddPondForm from '../features/ponds/AddPondForm';
 import AddServiceForm from '../components/AddServiceForm';
 import MessagesInbox from '../components/MessagesInbox';
 
