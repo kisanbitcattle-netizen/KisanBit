@@ -33,16 +33,16 @@
 //    component is actually wanted.
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { offlineCache } from '../utils/offlineCache';
-import SectionBoxHeader from './SectionBoxHeader';
-import CardHeaderStrip from './CardHeaderStrip';
+import { supabase } from '../../config/supabaseClient';
+import { offlineCache } from '../../utils/offlineCache';
+import SectionBoxHeader from '../../components/SectionBoxHeader';
+import CardHeaderStrip from '../../components/CardHeaderStrip';
 import IoTDeviceDetailModal from './IoTDeviceDetailModal';
 import AddWaterTankModal from './AddWaterTankModal';
 import TankGauge from './TankGauge';
-import { isTankOnline, tankLevel, LEVEL_LABEL } from '../utils/waterTank';
-import { TANK_SHAPES, feetInchesToCm, cmToFeetInches } from '../utils/tankVolume';
-import { useUser } from '../context/UserContext';
+import { isTankOnline, tankLevel, LEVEL_LABEL } from '../../utils/waterTank';
+import { TANK_SHAPES, feetInchesToCm, cmToFeetInches } from '../../utils/tankVolume';
+import { useUser } from '../../context/UserContext';
 
 const DEVICE_TYPE_OPTIONS = [
   '3-Phase Motor',

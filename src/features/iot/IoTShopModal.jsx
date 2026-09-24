@@ -10,7 +10,7 @@
 // server-side-trusted-price pattern as the RPC.
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
+import { supabase } from '../../config/supabaseClient';
 
 const GOLD = 'var(--color-gold)';
 const NAVY = 'var(--color-navy)';

@@ -19,8 +19,8 @@
 // time from its detail window.
 
 import { useEffect, useRef, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
-import { connectToTank, isTankBleSupported } from '../utils/tankBle';
+import { supabase } from '../../config/supabaseClient';
+import { connectToTank, isTankBleSupported } from '../../utils/tankBle';
 
 const GOLD = 'var(--color-gold)';
 const NAVY = 'var(--color-navy)';

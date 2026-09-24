@@ -22,7 +22,7 @@ import MapPreviewCard from '../components/MapPreviewCard';
 import FullMapModal from '../components/FullMapModal';
 import CattleInfoPanel from '../components/CattleInfoPanel';
 import FieldInfoPanel from '../features/fields/FieldInfoPanel';
-import IoTDevicesPanel from '../components/IoTDevicesPanel';
+import IoTDevicesPanel from '../features/iot/IoTDevicesPanel';
 import PondsPanel from '../features/ponds/PondsPanel';
 import WeatherCard from '../components/WeatherCard';
 import { parseWkbPoint } from '../utils/geo';

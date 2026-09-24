@@ -13,8 +13,8 @@
 import { useState } from 'react';
 import DeviceAnalyticsModal from './DeviceAnalyticsModal';
 import TankGauge from './TankGauge';
-import { isTankOnline, tankLevel, LEVEL_LABEL, formatLastUpdate } from '../utils/waterTank';
-import { tankCapacityLiters, formatLiters } from '../utils/tankVolume';
+import { isTankOnline, tankLevel, LEVEL_LABEL, formatLastUpdate } from '../../utils/waterTank';
+import { tankCapacityLiters, formatLiters } from '../../utils/tankVolume';
 
 const GOLD = 'var(--color-gold)';
 const NAVY = 'var(--color-navy)';

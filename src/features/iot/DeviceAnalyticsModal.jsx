@@ -18,9 +18,9 @@
 //   times a day.
 
 import { useEffect, useMemo, useState } from 'react';
-import { supabase } from '../config/supabaseClient';
+import { supabase } from '../../config/supabaseClient';
 import TankGauge from './TankGauge';
-import { buildTimeline, summarize, formatDateTime, isTankOnline } from '../utils/waterTank';
+import { buildTimeline, summarize, formatDateTime, isTankOnline } from '../../utils/waterTank';
 
 const HOUR = 60 * 60 * 1000;
 const RANGES = {

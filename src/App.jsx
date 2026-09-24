@@ -38,7 +38,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { App as CapacitorApp } from '@capacitor/app';
 import Header from './components/Header';
-import IoTShopModal from './components/IoTShopModal';
+import IoTShopModal from './features/iot/IoTShopModal';
 import AlertBanner from './components/AlertBanner';
 import HomeScreen from './screens/HomeScreen';
 import ProfileScreen from './screens/ProfileScreen';
