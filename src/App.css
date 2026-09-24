@@ -1,5 +1,30 @@
 /* src/App.css */
-/* Minimal reset so the map and tab bar fill the full screen cleanly. */
+/* KisanBit design system v2 — colors sampled directly from the official
+   brand mark (navy #2B3A61 / gold #DEA03B). International, professional
+   fintech-style cards (soft shadow, thin border) instead of the earlier
+   cartoon-signboard look. */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-navy: #2b3a61;        /* brand primary — exact from logo */
+  --color-navy-dark: #1c2748;
+  --color-gold: #dea03b;        /* brand accent — exact from logo */
+  --color-gold-dark: #b8801f;
+  --color-success: #2f9e64;     /* listings / positive status */
+  --color-danger: #d64545;      /* alerts / logout only */
+  --color-ink: #1a1a2e;         /* primary text */
+  --color-muted: #6b7280;       /* secondary text */
+  --color-bg: #f5f6f8;          /* app background — neutral, not tinted */
+  --color-card: #ffffff;
+  --color-border: #e6e8ec;
+
+  --font-display: 'Poppins', 'Noto Sans Telugu', sans-serif;
+  --font-body: 'DM Sans', 'Noto Sans Telugu', sans-serif;
+
+  --radius-card: 16px;
+  --shadow-card: 0 1px 2px rgba(20,24,40,0.04), 0 4px 12px rgba(20,24,40,0.06);
+}
 
 * {
   box-sizing: border-box;
@@ -10,16 +35,214 @@ html, body, #root {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Native form controls (input/select/textarea) don't inherit page colors by
+   default — browsers give them their own white background + black text.
+   Every component here was theming labels/buttons/cards via var(--color-*)
+   but never the inputs themselves, so in dark mode every field rendered as
+   a bright white box. This single rule brings all of them into the same
+   theme system used everywhere else - fixes it app-wide, not per-file. */
+input,
+select,
+textarea {
+  background: var(--color-card);
+  color: var(--color-ink);
+  border-color: var(--color-border);
+  font-family: inherit;
+}
+
+/* Placeholder text needs its own rule - it doesn't inherit `color` above. */
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-muted);
+  opacity: 1;
+}
+
+/* Autofill (saved phone numbers etc.) has its own browser-injected
+   background that ignores normal CSS - override it directly. */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px var(--color-card) inset;
+  -webkit-text-fill-color: var(--color-ink);
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* Dark mode — toggled via <html data-theme="dark">, set/persisted from App.jsx.
+   Same variable names as light mode, so every component using var(--color-*)
+   switches automatically with zero per-component changes. */
+[data-theme='dark'] {
+  --color-navy: #3a4b7a;
+  --color-navy-dark: #10182e;
+  --color-gold: #e8b158;
+  --color-gold-dark: #c98f2e;
+  --color-success: #3fbf7f;
+  --color-danger: #e5645f;
+  --color-ink: #eceef2;
+  --color-muted: #9aa1ad;
+  --color-bg: #14151c;
+  --color-card: #1e2029;
+  --color-border: #2b2d38;
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.35);
+}
+
+h1, h2, h3, .display-text {
+  font-family: var(--font-display);
+  font-weight: 600;
 }
 
 button {
   cursor: pointer;
-  font-family: inherit;
+  font-family: var(--font-body);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Professional card: subtle border + soft layered shadow, no heavy color. */
+.kb-card {
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
+}
+
+.kb-app-header {
+  background: var(--color-navy);
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kb-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kb-brand img {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: block;
+}
+
+.kb-brand .wordmark {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+
+.kb-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kb-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.kb-icon-btn .badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--color-gold);
+  color: var(--color-navy);
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 8px;
+  min-width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+}
+
+.kb-role-toggle {
+  display: flex;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.kb-role-toggle button {
+  border: none;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.kb-role-toggle button.active {
+  background: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.kb-bottom-nav {
+  display: flex;
+  background: var(--color-card);
+  border-top: 1px solid var(--color-border);
+}
+
+.kb-nav-btn {
+  flex: 1;
+  padding: 10px 4px 8px;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-muted);
+  border-top: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.kb-nav-btn.active {
+  color: var(--color-navy);
+  border-top-color: var(--color-gold);
+  font-weight: 700;
 }
 
 /* Prevent Leaflet's default marker shadow div from fighting our custom icon */
 .kisanbit-cattle-marker {
   background: transparent;
   border: none;
+}
+
+/* Leaflet's built-in zoom +/- control ships hardcoded white/black from
+   leaflet.css itself - nothing here was overriding it for dark mode, so
+   it showed as a solid white box on every map screen (Add Cattle, Add
+   Field, Full Map) regardless of theme. */
+.leaflet-control-zoom a {
+  background: var(--color-card) !important;
+  color: var(--color-ink) !important;
+  border-color: var(--color-border) !important;
+}
+.leaflet-control-zoom {
+  border-color: var(--color-border) !important;
 }
